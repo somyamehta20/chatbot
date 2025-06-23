@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Voice Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="lame.min.js"></script>
+</head>
+
+<body>
+    <div class="chat-wrapper">
+        <div class="chat-container">
+            <header class="chat-header">
+                <h1>Personal Voice Bot</h1>
+                <p>Ask me anything. I'll respond as authentically as I would in a real conversation.</p>
+            </header>
+            <main class="chat-messages" id="chatMessages">
+                <!-- Chat messages will be dynamically inserted here -->
+            </main>
+            <div class="example-questions" id="exampleQuestions">
+                <!-- Example questions will be inserted here -->
+            </div>
+            <footer class="chat-input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="messageInput" placeholder="Type a message or hold to speak...">
+                    <button id="sendButton" aria-label="Send Message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <button id="voiceButton" class="voice-button" aria-label="Hold to Speak">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </footer>
+            <div class="status-bar" id="status">Ready</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
