@@ -302,9 +302,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-const PORT = process.env.PORT || 3001; // Changed to 3001 to avoid conflicts
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log("Voice Bot server running on port " + PORT);
+  console.log("Server running on port " + PORT);
   console.log("Open http://localhost:" + PORT + " in your browser");
   console.log("API Key configured: " + (config.OPENAI_API_KEY ? "Yes" : "No"));
 });
