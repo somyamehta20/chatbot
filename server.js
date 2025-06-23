@@ -294,7 +294,7 @@ app.use((err, req, res, next) => {
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {
-  res.json({ status: "OK", message: "Voice Bot is running" });
+  res.json({ status: "OK" });
 });
 
 // Serve the main page
